@@ -22,11 +22,19 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../assets/css/fontawesome.min.css" />
 
     <!--tienda del ecomerse "A la medida"-->
   </head>
-
+  <style>
+    input {
+      background-color: #ebe9f1 !important;
+    }
+  </style>
   <body>
     <!-- Start Top Nav -->
     <div class="" id="header-nav-page"></div>
@@ -45,7 +53,7 @@
                 class="btn btn-outline-danger mb-3 filter-btn"
                 data-filter="all"
               >
-                <i class="fa fa-shopping"></i>
+                <i class="bi-person-bounding-box me-2"></i>
                 Todos
               </button>
               <button
@@ -66,7 +74,7 @@
                 class="btn btn-outline-danger mb-3 filter-btn"
                 data-filter="tag-vestidos"
               >
-                <i class="fas fa-user-tie"></i>
+                <i class="bi bi-stars"></i>
                 Vestidos
               </button>
               <button
@@ -100,6 +108,19 @@
             </div>
           </div>
         </div>
+        <div class="col-md-6 mb-5">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              id="buscador"
+              placeholder="Buscar productos..."
+            />
+            <button class="btn btn-danger" type="button" id="btnBuscar">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </div>
         <!-- materiales -->
 
         <!--shop1-->
@@ -125,9 +146,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none mb-2"
-                    >Conjunto Morado a Rayas</a
-                  >
+                  <h2 class="h2 card-title text-decoration-none mb-2">
+                    Conjunto Morado a Rayas
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -204,9 +225,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none mb-2"
-                    >Vestido Elegante Lila</a
-                  >
+                  <h2 class="h2 card-title text-decoration-none mb-2">
+                    Vestido Elegante Lila
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -279,7 +300,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none">Vestido Amarillo Floral</a>
+                  <h2 class="h2 card-title text-decoration-none">
+                    Vestido Amarillo Floral
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -352,9 +375,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none"
-                    >Top de Rayas Estilo Tube</a
-                  >
+                  <h2 class="h2 card-title text-decoration-none">
+                    Top de Rayas Estilo Tube
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -423,7 +446,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none">Top Vinotinto con Lazos</a>
+                  <h2 class="h2 card-title text-decoration-none">
+                    Top Vinotinto con Lazos
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -494,7 +519,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none">Top Rayado con Volantes</a>
+                  <h2 class="h2 card-title text-decoration-none">
+                    Top Rayado con Volantes
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -563,9 +590,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none"
-                    >Top Gris Rayado con Cuello Redondo</a
-                  >
+                  <h2 class="h2 card-title text-decoration-none">
+                    Top Gris Rayado con Cuello Redondo
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -636,9 +663,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none"
-                    >Conjunto Negro con Lacito Blanco</a
-                  >
+                  <h2 class="h2 card-title text-decoration-none">
+                    Conjunto Negro con Lacito Blanco
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -715,9 +742,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none"
-                    >Conjunto Negro de Top Sin Mangas y Short con Cordón</a
-                  >
+                  <h2 class="h2 card-title text-decoration-none">
+                    Conjunto Negro de Top Sin Mangas y Short con Cordón
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -793,9 +820,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none"
-                    >Vestido Rosa con Lunares</a
-                  >
+                  <h2 class="h2 card-title text-decoration-none">
+                    Vestido Rosa con Lunares
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -868,9 +895,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none"
-                    >Vestido Lila con Lunares</a
-                  >
+                  <h2 class="h2 card-title text-decoration-none">
+                    Vestido Lila con Lunares
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -943,9 +970,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none"
-                    >Vestido Azul con Volantes</a
-                  >
+                  <h2 class="h2 card-title text-decoration-none">
+                    Vestido Azul con Volantes
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -1018,9 +1045,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none"
-                    >Vestido Negro con Lunares Blancos</a
-                  >
+                  <h2 class="h2 card-title text-decoration-none">
+                    Vestido Negro con Lunares Blancos
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -1093,7 +1120,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none">Vestido Rojo con Lazo</a>
+                  <h2 class="h2 card-title text-decoration-none">
+                    Vestido Rojo con Lazo
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -1166,9 +1195,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none"
-                    >Vestido Rosa con Dobladillo</a
-                  >
+                  <h2 class="h2 card-title text-decoration-none">
+                    Vestido Rosa con Dobladillo
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -1240,9 +1269,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none"
-                    >Blusa Roja Floral con Falda Negra de Botones</a
-                  >
+                  <h2 class="h2 card-title text-decoration-none">
+                    Blusa Roja Floral con Falda Negra de Botones
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -1319,9 +1348,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none"
-                    >Vestido Verde Oliva Ajustado</a
-                  >
+                  <h2 class="h2 card-title text-decoration-none">
+                    Vestido Verde Oliva Ajustado
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -1391,9 +1420,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none"
-                    >Vestido Rojo con Perlas y Lazo</a
-                  >
+                  <h2 class="h2 card-title text-decoration-none">
+                    Vestido Rojo con Perlas y Lazo
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -1467,9 +1496,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none"
-                    >Blusa Negra Anudada al Frente</a
-                  >
+                  <h2 class="h2 card-title text-decoration-none">
+                    Blusa Negra Anudada al Frente
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -1539,9 +1568,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none"
-                    >Falda Beige con Lunares Blancos y Abertura Frontal</a
-                  >
+                  <h2 class="h2 card-title text-decoration-none">
+                    Falda Beige con Lunares Blancos y Abertura Frontal
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -1613,9 +1642,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none"
-                    >Falda Verde Claro con Lunares Blancos y Abertura Frontal</a
-                  >
+                  <h2 class="h2 card-title text-decoration-none">
+                    Falda Verde Claro con Lunares Blancos y Abertura Frontal
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -1689,9 +1718,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none"
-                    >Falda Verde con Lunares Oscuros y Abertura Frontal</a
-                  >
+                  <h2 class="h2 card-title text-decoration-none">
+                    Falda Verde con Lunares Oscuros y Abertura Frontal
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -1764,9 +1793,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none"
-                    >Top Negro Strapless con Estampado Floral</a
-                  >
+                  <h2 class="h2 card-title text-decoration-none">
+                    Top Negro Strapless con Estampado Floral
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -1836,7 +1865,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none">Pack de Ropa Interior</a>
+                  <h2 class="h2 card-title text-decoration-none">
+                    Pack de Ropa Interior
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -1907,9 +1938,9 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <a class="h2 text-decoration-none"
-                    >Blusa Negra con Diseño Fruncido y Detalles en el Cuello
-                  </a>
+                  <h2 class="h2 card-title text-decoration-none">
+                    Blusa Negra con Diseño Fruncido y Detalles en el Cuello
+                  </h2>
                   <ul
                     class="w-100 list-unstyled d-flex justify-content-between mb-0"
                   >
@@ -2020,24 +2051,38 @@
     <div id="modal-container3"></div>
 
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const botones = document.querySelectorAll(".filter-btn");
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const productos = document.querySelectorAll(".producto");
 
-        const productos = document.querySelectorAll(".producto");
-
-        botones.forEach((button) => {
-          button.addEventListener("click", () => {
-            const filtro = button.getAttribute("data-filter");
-            productos.forEach((prod) => {
-              if (filtro === "all" || prod.classList.contains(filtro)) {
-                prod.style.display = "block";
-              } else {
-                prod.style.display = "none";
-              }
-            });
+      filterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const filtro = btn.getAttribute("data-filter");
+          productos.forEach((prod) => {
+            if (filtro === "all" || prod.classList.contains(filtro)) {
+              prod.style.display = "block";
+            } else {
+              prod.style.display = "none";
+            }
           });
         });
       });
+
+      // Búsqueda en tiempo real
+      document
+        .getElementById("buscador")
+        .addEventListener("keyup", function () {
+          const texto = this.value.toLowerCase();
+          productos.forEach((prod) => {
+            const nombre = prod
+              .querySelector(".card-title")
+              .textContent.toLowerCase();
+            if (nombre.includes(texto)) {
+              prod.style.display = "block";
+            } else {
+              prod.style.display = "none";
+            }
+          });
+        });
     </script>
 
     <script>
